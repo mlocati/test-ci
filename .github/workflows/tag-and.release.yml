@@ -6,7 +6,7 @@ on:
       - master
   create:
     tags:
-      - '*'
+      - "*"
 
 jobs:
   create-and-release:
@@ -125,8 +125,8 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-            tag_name: ${{ env.VERSIONTAG_THIS }}
-            release_name: ${{ env.RELEASE_NAME }}
-            body: ${{ env.RELEASE_NOTES }}
-            draft: false
-            prerelease: false
+          tag_name: ${{ env.VERSIONTAG_THIS }}
+          release_name: ${{ env.RELEASE_NAME }}
+          body: ${{ env.RELEASE_NOTES }}
+          draft: false
+          prerelease: false
